@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://g3p4ogc1ugl4"]
+
+[ext_resource type="Script" uid="uid://s5awdeg3yfdv" path="res://RoadGenerator/road_generator.gd" id="1_cb2cp"]
+
+[sub_resource type="Curve3D" id="Curve3D_bnbne"]
+
+[node name="RoadGenerator" type="Path3D" unique_id=1017321782]
+curve = SubResource("Curve3D_bnbne")
+script = ExtResource("1_cb2cp")
+curviness = 0.95
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="." unique_id=1328790736]
+polygon = PackedVector2Array(-0.99927676, 0.0020106533, -1.0032979, 0.17894496, 1.003298, 0.1829662, 1, 0)
+mode = 2
+path_node = NodePath("..")
+path_interval_type = 0
+path_interval = 1.0
+path_simplify_angle = 0.0
+path_rotation = 2
+path_rotation_accurate = false
+path_local = false
+path_continuous_u = true
+path_u_distance = 1.0
+path_joined = false
